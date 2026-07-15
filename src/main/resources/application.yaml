@@ -13,6 +13,14 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://127.0.0.1:8080/realms/master
+          issuer-uri: http://127.0.0.1:8080/realms/elearning-001
 server:
   port: 8090
+
+keycloak:
+  server-url: http://localhost:8080
+  client-id: spring-boot-eleaning-002
+  client-secret: tzlzA3S1YwYnHMpeiia1IZHmBAFuomvh
+  target-realm: elearning-001
+  ream: master
+
